@@ -1,0 +1,33 @@
+nav {
+  background-color: #181818;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+
+  > .logo {
+    width: 30px;
+    margin-left: 1.5rem;
+  }
+
+  .navbar-links-container {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.5rem;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #fca311;
+      }
+    }
+  }
+}

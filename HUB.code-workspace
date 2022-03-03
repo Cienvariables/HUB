@@ -3,5 +3,10 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"editor.fontSize": 18,
+		"editor.cursorStyle": "underline",
+		"editor.tabSize": 2
+	}
 }

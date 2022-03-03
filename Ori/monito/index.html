@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Barra superior con imagen y sign in -->
+    <img class=" header__logo" src="./assets/issuu.png" alt="Logo Issuu">
+    <div class="header__sing">
+
+      <p class="header__login"> Already a User?</p>
+      <a href="#">Sign in</a></li>
+    </div>
+  </header>
+
+  <!-- formulario -->
+
+  <div class="accout">
+    <form action="/next-page" method="post">
+      <h2>Create an Issuu Accout.</h2>
+
+      <div class="accout__button">
+        <a href="#"><img class="accout__button-google" src="./assets/login-google.png"></a>
+        <a href="#"><img class="accout__button-facebook" src="./assets/login-facebook.png"></a>
+      </div>
+
+      <p>or with email</p>
+
+      <div class="accout__legend">
+        <label class="accout__legend__label" for="email">Email</label>
+        <input class="accout__legend__input" type="text" name="email" id="email">
+        <label class="accout__legend__label" for="password">Password</label>
+        <input class="accout__legend__input" type="password" name="password" id="password">
+
+        <div class="accout__legend2">
+
+          <input class="accout__legend___input__checkbox" type="checkbox" name="checkbox" id="checkbox">
+          <label class="accout__legend__label__checkbox">I accept the <a href="#">Terms of Service</a> and the <a
+              href="#">Professional
+              Terms of Service.</a></label>
+          <a href=""></a>
+        </div>
+        <!-- boton -->
+        <div class="accout__legend__CreateAccount">
+          <button class="accout__legend__button" type="submit">Create Account</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- footer -->
+
+  <footer class="footer">
+
+    <div class="footer__div__link1">
+      <p><a href="#">Isuu Inc.</a></p>
+    </div>
+
+    <div class="footer__div__link2">
+      <p><a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

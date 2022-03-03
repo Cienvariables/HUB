@@ -1,0 +1,140 @@
+/* style global */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Barra superior con imagen y sign in */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 2px auto;
+}
+
+a {
+  color: rgba(0, 0, 255, 0.555);
+}
+
+p {
+  margin: 1em 0;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+header img.header__logo {
+  width: 15rem;
+  height: 8rem;
+}
+
+.header__sing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-right: 5em;
+  font-size: 0.9rem;
+}
+
+.header__login {
+  margin: 0.5em 0;
+  font-size: 0.9rem;
+}
+
+header::after {
+  content: "-";
+  background: rgb(202, 199, 199);
+  height: 3px;
+}
+
+header::after {
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+/* formulario */
+.accout {
+  padding: 60px 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.accout__button {
+  /* border: solid 5px red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.accout__button-google {
+  height: 50%;
+  width: 60%;
+}
+
+.accout__button-facebook {
+  height: 30%;
+  width: 35%;
+}
+
+.accout__legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-even;
+}
+
+.accout__legend__label {
+  margin: 0.5em 0;
+  color: rgba(0, 0, 0, 0.795);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+.accout__legend__input {
+  width: 40em;
+  height: 2.5em;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border-color: darkgrey;
+  border-width: 0.1px;
+}
+
+.accout__legend2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.accout__legend__label__checkbox {
+  margin-left: 0.5em;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+.accout__legend___input__checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* boton */
+.accout__legend__button {
+  margin: 2rem 0;
+  width: 18rem;
+  height: 3.5rem;
+  border: dotted;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(202, 199, 199);
+  color: rgb(202, 199, 199);
+}

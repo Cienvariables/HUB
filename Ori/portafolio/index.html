@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/6ab3cbce2d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/youtube.svg" alt="youtube-logo" class="logo" />
+
+      <div class="navbar-links-container">
+        <a href="#"> 
+          Home
+        </a>
+        <a href="#section2">Sobre mí</a>
+        <a href="#gallery">Galería</a>
+        <a href="formulario.html">Contacto</a>
+      </div>
+    </nav>
+
+    <section id="section1" class="section-container section1">
+      <div class="text-container">
+        <h1>Hola, mi nombre es <span class="myName">Oriana</span></h1>
+        <!-- camelcase-->
+        <p>Soy <strong>desarrolladora web front-end</strong></p>
+      </div>
+      <img
+        src="./images/FotoPerfil.png"
+        alt="foto de perfil"
+        class="profile-img"
+      />
+    </section>
+
+    <section id="section2" class="section-container section2">
+      <table>
+        <thead>
+          <th>Habilidades profesionales</th>
+          <th>Habilidades blandas</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Trabajo en equipo</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Resiliencia</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Proactividad</td>
+          </tr>
+          <tr>
+            <td>React js</td>
+            <td>Resolución de problemas</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="gallery">
+      <!-- bloque -->
+      <div class="gallery">
+        <!-- elemento 1 / modificador 1-->
+        <div class="gallery__item gallery__item--item1">
+          <!-- elemento 2-->
+          <h2 class="gallery__title">Proyectos</h2>
+        </div>
+        <!-- elemento 3 / modificador 2-->
+        <div class="gallery__item gallery__item--item2">
+          <!-- elemento 4-->
+          <h2 class="gallery__title">Portafolio</h2>
+        </div>
+        <!-- elemento 5 / modificador 3-->
+        <div class="gallery__item gallery__item--item3">
+          <!-- elemento 6-->
+          <h2 class="gallery__title">Voluntariado</h2>
+        </div>
+
+        <div class="gallery__item">
+          <iframe
+            src="https://www.youtube.com/embed/QBPE2fZsVYU&ab_channel=OneRepublicVEVO"
+            frameborder="0"
+            width="420"
+            type="text/html"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>©Copyright 2022</p>
+      <div class="footer-link-container">
+        <a href="https://developer.mozilla.org/es/">Visita la web de MDN</a>
+        <a href="#">Contáctame</a>
+      </div>
+    </footer>
+  </body>
+</html>
