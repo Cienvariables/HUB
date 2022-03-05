@@ -12,13 +12,13 @@
 
 <body>
 
-  <header>
+  <header class="header">
     <!-- Barra superior con imagen y sign in -->
-    <img class=" header__logo" src="./assets/issuu.png" alt="Logo Issuu">
-    <div class="header__sing">
+    <img class="header__logo" src="./assets/issuu.png" alt="Logo Issuu">
 
-      <p class="header__login"> Already a User?</p>
-      <a href="#">Sign in</a></li>
+    <div class="header__sing">
+      <p class="header__sing__login"> Already a User?</p>
+      <a href="#">Sign in</a>
     </div>
   </header>
 
@@ -29,25 +29,28 @@
       <h2>Create an Issuu Accout.</h2>
 
       <div class="accout__button">
-        <a href="#"><img class="accout__button-google" src="./assets/login-google.png"></a>
-        <a href="#"><img class="accout__button-facebook" src="./assets/login-facebook.png"></a>
+        <img class="accout__button__google" src="./assets/login-google.png" alt="imagen de boton de Google">
+        <img class="accout__button__facebook" src="./assets/login-facebook.png" alt="imagen de boton de facebook">
       </div>
 
       <p>or with email</p>
 
       <div class="accout__legend">
-        <label class="accout__legend__label" for="email">Email</label>
-        <input class="accout__legend__input" type="text" name="email" id="email">
-        <label class="accout__legend__label" for="password">Password</label>
-        <input class="accout__legend__input" type="password" name="password" id="password">
+        <label for="email" class="accout__legend__label">Email</label>
+        <input class="accout__legend__input" type="text" name="email" id="email" required>
+
+        <label for="password" lass="accout__legend__label">Password</label>
+        <input input minlength="8" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Incluya al menos una mayúscula, una minúscula y un número." class="accout__legend__input"
+          type="password" name="password" id="password" required>
 
         <div class="accout__legend2">
 
-          <input class="accout__legend___input__checkbox" type="checkbox" name="checkbox" id="checkbox">
-          <label class="accout__legend__label__checkbox">I accept the <a href="#">Terms of Service</a> and the <a
-              href="#">Professional
+          <input class="accout__legend2___input" type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox" class="accout__legend2__label">I accept the <a href="#">Terms of
+              Service</a> and the <a href="#">Professional
               Terms of Service.</a></label>
-          <a href=""></a>
         </div>
         <!-- boton -->
         <div class="accout__legend__CreateAccount">
@@ -55,20 +58,20 @@
         </div>
       </div>
     </form>
-
   </div>
 
   <!-- footer -->
 
-  <footer class="footer">
+  <footer>
 
-    <div class="footer__div__link1">
-      <p><a href="#">Isuu Inc.</a></p>
+    <a class="footer__a1" href="#">Isuu Inc.</a>
+
+    <div>
+      <a href="#" class="footer__aGroup">Terms</a>
+      <a href="#" class="footer__aGroup">y otra cosita</a>
+      <a href="#" class="footer__aGroup">Terms</a>
     </div>
 
-    <div class="footer__div__link2">
-      <p><a href="#">Terms</a></p>
-    </div>
   </footer>
 
 </body>
