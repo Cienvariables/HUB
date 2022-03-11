@@ -1,6 +1,11 @@
 @import url("_medias.scss");
 @import url("_variables.scss");
 
+body {
+  max-width: 100%;
+  padding: 0 2em;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -8,101 +13,113 @@ a {
 }
 
 // Barra superior
-.header{
-width: 230%;
-height: 7em;
-display:flex;
-flex-direction: row;
-flex-wrap: nowrap;
-margin:1px;
 
-  &__logo{
-    width: 50%;
+.header {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  // align-items: baseline;
+  align-content: space-between;
+  margin: 1px;
+
+  &__logo {
+    width: 45%;
     height: 100%;
-
   }
 
-  &__sing{
-    display:flex;
+  &__sing {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
 
-    &__login{
-      font-size:1em;
+    &__login {
+      font-size: 1em;
       color: var(--primary-color);
-        }
+    }
   }
-
 }
 
 // formulario
-  .accout {
-    display: flex;
-    flex-direction: row;
+
+.accout {
+  &__title {
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+  }
+
+  &__p {
+    padding-left: 1em;
+  }
 
   &__button {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 50px;
-    border: 1px solid rgb(187, 11, 11);
-  }
+    align-items: center;
+    height: 80px;
 
     &__facebook {
-      width: 170px;
+      width: 175px;
+      margin: 2px 0 0 10px;
     }
 
     &__google {
-     width:200px;
-  
+      width: 160px;
+      margin: 1px 0px 0 10px;
+    }
   }
 
-  &__legend{
+  &__legend {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 
-  }
-    &__label{
+    &__label {
       font-weight: bold;
+      padding-left: 1em;
     }
 
     &__input {
-      margin: 15px 0;
-      font-weight: bold;
-      }
+      margin: 5px 0;
+      width: 97%;
+      margin-left: 1em;
+      border: 1px solid rgb(214, 14, 14);
+    }
 
-    &__CreateAccount{
+    &__CreateAccount {
+      text-align: center;
+    }
+  }
+
+  &__legend2 {
+    display: flex;
+    flex-direction: row;
+
+    &__label {
+      margin: 0.5rem;
+    }
+    // Mira este input, lo bajo con un border-top, pq al verlo input
+    // con las herramientas de desarrollador me baja pero al ponerlo
+    // aqui nada, de nada.. Tampoco consigo hacerlo mas grande
+    &__input {
+      width: 70%;
+      margin-top: 10px;
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  // footer
+
+  .footer__a1 {
+    display: flex;
+    flex-direction: row;
+
+    &__a1 {
       font-weight: bold;
     }
-}
-
-&__legend2 {
-  display: flex;
-  flex-direction: row;
-
-
-      &__label {
-        font-weight: bold;
-      }
-
-      &__input {
-        font-weight: bold;
-      }
-
-}
-
-// footer
-
-.footer__a1{
-  display: flex;
-  flex-direction: row;
-
-  &__a1{
-
-    font-weight: bold;
   }
 }
-
-
-

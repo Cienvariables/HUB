@@ -11,9 +11,10 @@
 </head>
 
 <body>
+  <!-- Barra superior con imagen y sign in -->
 
   <header class="header">
-    <!-- Barra superior con imagen y sign in -->
+
     <img class="header__logo" src="./assets/issuu.png" alt="Logo Issuu">
 
     <div class="header__sing">
@@ -26,21 +27,21 @@
 
   <div class="accout">
     <form action="/next-page" method="post">
-      <h2>Create an Issuu Accout.</h2>
+      <h2 class="accout__title">Create an Issuu Accout</h2>
 
       <div class="accout__button">
         <img class="accout__button__google" src="./assets/login-google.png" alt="imagen de boton de Google">
         <img class="accout__button__facebook" src="./assets/login-facebook.png" alt="imagen de boton de facebook">
       </div>
 
-      <p>or with email</p>
+      <p class="accout__p">or with email</p>
 
       <div class="accout__legend">
         <label for="email" class="accout__legend__label">Email</label>
         <input class="accout__legend__input" type="text" name="email" id="email" required>
 
-        <label for="password" lass="accout__legend__label">Password</label>
-        <input input minlength="8" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+        <label for="password" class="accout__legend__label">Password</label>
+        <input minlength="8" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
           pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
           title="Incluya al menos una mayúscula, una minúscula y un número." class="accout__legend__input"
           type="password" name="password" id="password" required>
@@ -52,6 +53,8 @@
               Service</a> and the <a href="#">Professional
               Terms of Service.</a></label>
         </div>
+
+
         <!-- boton -->
         <div class="accout__legend__CreateAccount">
           <button class="accout__legend__button" type="submit">Create Account</button>
