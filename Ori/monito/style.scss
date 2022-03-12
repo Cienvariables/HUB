@@ -1,15 +1,16 @@
-@import url("_medias.scss");
-@import url("_variables.scss");
+@import "_medias.scss";
+@import "_variables.scss";
 
 body {
   max-width: 100%;
   padding: 0 2em;
+  color: rgb(163, 144, 163);
 }
 
 a {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: medium;
+  font-size: 14px;
 }
 
 // Barra superior
@@ -20,10 +21,9 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // justify-content: space-between;
-  // align-items: baseline;
   align-content: space-between;
   margin: 1px;
+  color: purple;
 
   &__logo {
     width: 45%;
@@ -35,10 +35,10 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
+    margin: 1rem;
 
     &__login {
-      font-size: 1em;
-      color: var(--primary-color);
+      font-size: 0.8em;
     }
   }
 }
@@ -48,12 +48,13 @@ a {
 .accout {
   &__title {
     text-align: center;
-    padding: 1em;
+    padding: 0.1em;
     margin: 0;
   }
 
   &__p {
     padding-left: 1em;
+    margin-bottom: 1em;
   }
 
   &__button {
@@ -78,25 +79,26 @@ a {
     width: 100%;
 
     &__label {
-      font-weight: bold;
-      padding-left: 1em;
+      padding-left: 0.8em;
     }
 
     &__input {
       margin: 5px 0;
       width: 97%;
       margin-left: 1em;
-      border: 1px solid rgb(214, 14, 14);
     }
 
     &__CreateAccount {
       text-align: center;
+      padding: 1rem;
     }
   }
 
   &__legend2 {
     display: flex;
     flex-direction: row;
+    padding: 0 1rem;
+    margin-top: 15px;
 
     &__label {
       margin: 0.5rem;
@@ -105,21 +107,25 @@ a {
     // con las herramientas de desarrollador me baja pero al ponerlo
     // aqui nada, de nada.. Tampoco consigo hacerlo mas grande
     &__input {
-      width: 70%;
-      margin-top: 10px;
-      width: 50%;
-      height: 50%;
+      width: 25px;
+      height: 25px;
+      margin-top: 19px;
     }
   }
+}
 
-  // footer
+// footer
 
-  .footer__a1 {
-    display: flex;
-    flex-direction: row;
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
 
-    &__a1 {
-      font-weight: bold;
-    }
+  &__a1 {
+    padding-right: 6em;
+  }
+
+  &__aGroup {
+    padding-left: 0.4em;
   }
 }
