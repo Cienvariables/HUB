@@ -4,7 +4,6 @@
   body {
     max-width: 100%;
     padding: 0 2em;
-    color: purple;
   }
   a {
     text-decoration: none;
@@ -26,11 +25,10 @@
     -ms-flex-line-pack: justify;
         align-content: space-between;
     margin: 1px;
-    color: purple;
   }
   .header__logo {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 140%;
   }
   .header__sing {
     display: -webkit-box;
@@ -58,7 +56,8 @@
   }
   .accout__p {
     padding-left: 1em;
-    margin-bottom: 1em;
+    margin: 2rem 0;
+    font-size: 16px;
   }
   .accout__button {
     display: -webkit-box;
@@ -67,6 +66,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 80px;
   }
   .accout__button__facebook {
@@ -126,13 +127,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-top: 1em;
   }
   .footer__a1 {
-    padding-right: 6em;
+    padding-right: 1em;
   }
   .footer__aGroup {
-    padding-left: 0.4em;
+    padding-left: 0.5em;
   }
 }
 
@@ -168,15 +172,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  margin: 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: purple;
 }
 
@@ -282,7 +286,7 @@ a {
 .accout__legend2__input {
   width: 25px;
   height: 25px;
-  margin-top: 19px;
+  margin-top: 14px;
 }
 
 .footer {

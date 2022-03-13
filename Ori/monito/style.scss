@@ -4,7 +4,6 @@
 body {
   max-width: 100%;
   padding: 0 2em;
-  color: rgb(163, 144, 163);
 }
 
 a {
@@ -16,14 +15,12 @@ a {
 // Barra superior
 
 .header {
-  width: 100%;
+  width: 100;
   height: 5em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-between;
-  margin: 1px;
-  color: purple;
+  align-items: center;
 
   &__logo {
     width: 45%;
@@ -106,10 +103,11 @@ a {
     // Mira este input, lo bajo con un border-top, pq al verlo input
     // con las herramientas de desarrollador me baja pero al ponerlo
     // aqui nada, de nada.. Tampoco consigo hacerlo mas grande
+
     &__input {
       width: 25px;
       height: 25px;
-      margin-top: 19px;
+      margin-top: 14px;
     }
   }
 }
