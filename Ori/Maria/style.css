@@ -1,8 +1,20 @@
+:root {
+  --primaryColor: rgba(255, 255, 255, 0);
+}
+
 .div {
-  border: solid 1px red;
+  background-color: --primaryColor;
 }
 
 .div__1 {
-  border: #fff;
+  background-color: #00ff15;
+}
+
+.div__1__p {
+  background-color: #00ff15;
+}
+
+.div__p {
+  background-color: #00ff15;
 }
 /*# sourceMappingURL=style.css.map */
